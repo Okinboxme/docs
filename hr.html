@@ -26,7 +26,8 @@
 
 </head> 
 
-<body class="docs-page">    
+<body class="docs-page">  
+	<div id="like_button_container"></div>
     <header class="header fixed-top">	    
         <div class="branding docs-branding">
             <div class="container-fluid position-relative py-2">
@@ -638,6 +639,13 @@
     <script src="assets/plugins/jquery.scrollTo.min.js"></script>
     <script src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script> 
     <script src="assets/js/docs.js"></script> 
+	<!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="like_button.js"></script>
 
 </body>
 </html> 
